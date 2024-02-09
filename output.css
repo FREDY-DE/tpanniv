@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  height: 100vh;
+  border: 2px solid black;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 2px solid #000;
+}
+
+.container- {
+  display: flex;
+}
+
+.container-color {
+  background-color: pink;
+  height: 90.3vh;
+  width: 85vh;
+}
+
+.image-c {
+  padding: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  margin: 30px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #3498db;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.circle .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  font-size: 16px;
+  color: #3498db;
+  white-space: nowrap;
+  animation: rotateText 5s linear infinite;
+}
+@keyframes rotateText {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+
+.container-nom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 350px;
+}
+
+.nom {
+  font-size: 20px;
+  text-align: center;
+  background-color: pink;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.container-text {
+  height: 90.2vh;
+  width: 85vh;
+}
+
+.premier-text,
+.deuxieme-text {
+  text-align: center;
+  padding: 150px;
+  margin: 30px;
+  border-radius: 8px;
+  border: 2px solid #000;
+  box-shadow: 10px 10px 5px 10px pink;
+}
+
+.premier-text {
+  background-color: white;
+}
+
+.deuxieme-text {
+  background-color: gray;
+}
+
+.progress-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.progress-container .progress-bar {
+  width: 60%;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  margin: 10px;
+  justify-content: center;
+}
+.progress-container .progress-bar .progress {
+  width: 50%;
+  height: 20px;
+  background-color: pink;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=output.css.map */
